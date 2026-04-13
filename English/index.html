@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Quiz - Ôn Tập Cuối Học Kì II Lớp 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">ÔN TẬP CUỐI HỌC KÌ II - LỚP 7</p>
+          <h1>English Practice Website</h1>
+          <p class="lead">
+            Luyện 30 câu trắc nghiệm (từ câu 13-42), nộp bài để xem điểm và phân
+            tích đúng/sai chi tiết.
+          </p>
+        </div>
+        <button id="shuffleBtn" class="btn ghost" type="button">Đảo đề</button>
+      </header>
+
+      <section class="metrics">
+        <article class="metric">
+          <p>Đã trả lời</p>
+          <h2 id="progressText">0 / 30</h2>
+        </article>
+        <article class="metric">
+          <p>Điểm</p>
+          <h2 id="scoreText">0</h2>
+        </article>
+      </section>
+
+      <div class="bar"><span id="progressFill"></span></div>
+
+      <section
+        id="resultBanner"
+        class="result-banner"
+        aria-live="polite"
+      ></section>
+
+      <section id="quiz" class="quiz-grid"></section>
+
+      <footer class="actions">
+        <button id="submitBtn" class="btn primary" type="button">
+          Nộp bài
+        </button>
+        <button id="resetBtn" class="btn secondary" type="button">
+          Làm lại
+        </button>
+      </footer>
+    </main>
+
+    <template id="questionTemplate">
+      <article class="card">
+        <p class="q-index"></p>
+        <h3 class="q-text"></h3>
+        <div class="opts"></div>
+        <p class="analysis"></p>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

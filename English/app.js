@@ -433,6 +433,96 @@ const ALL_QUESTIONS = [
     note: "So sánh nhất dùng 'the'; cụm go to school thường không dùng mạo từ.",
     confidence: "high",
   },
+  {
+    id: 43,
+    section: "Signs",
+    text: "What does the sign mean?",
+    image: "picture/43.png",
+    options: [
+      "You can only buy our food and enjoy it at home.",
+      "You are invited to enjoy our food inside.",
+      "We can take our guests away for services.",
+      "You can eat here.",
+    ],
+    correct: 0,
+    note: "Biển 'TAKE-OUT ONLY' nghĩa là chỉ bán mang đi, không ăn tại chỗ.",
+    confidence: "high",
+  },
+  {
+    id: 44,
+    section: "Signs",
+    text: "What does the sign mean?",
+    image: "picture/44.png",
+    options: [
+      "There aren't any trucks on this street.",
+      "People must drive trucks from 7 a.m. to 7 p.m.",
+      "People can drive trucks from 7 a.m. to 7 p.m.",
+      "People can't drive trucks from 7 a.m. to 7 p.m.",
+    ],
+    correct: 1,
+    note: "Theo đáp án bạn cung cấp, chọn B. Lưu ý: với nội dung biển báo trong ảnh, đáp án thường gặp là D.",
+    confidence: "medium",
+  },
+  {
+    id: 45,
+    section: "Signs",
+    text: "What does this sign mean?",
+    image: "picture/45.png",
+    options: [
+      "You cannot go this way.",
+      "You should step carefully.",
+      "You can step fast here.",
+      "You should step fast.",
+    ],
+    correct: 1,
+    note: "Biển 'CAUTION - Watch your step' nhắc đi lại cẩn thận, để ý bước chân.",
+    confidence: "high",
+  },
+  {
+    id: 46,
+    section: "Signs",
+    text: "What does this sign mean?",
+    image: "picture/46.png",
+    options: [
+      "We should take patients to the hospital.",
+      "Hospitals are permitted to build here.",
+      "There is a nearby medical center.",
+      "The Red Cross is available.",
+    ],
+    correct: 2,
+    note: "Biển có ký hiệu chữ thập đỏ và giường bệnh báo hiệu gần đó có cơ sở y tế/bệnh viện.",
+    confidence: "high",
+  },
+  {
+    id: 47,
+    section: "Signs",
+    text: "What does the sign mean?",
+    image: "picture/47.png",
+    options: [
+      "You must not take food or drinks out of this room.",
+      "You cannot have snacks in this room.",
+      "You can buy cheaper food here.",
+      "You must eat in this room.",
+    ],
+    correct: 1,
+    note: "Biển 'NO FOOD OR DRINK IN THIS AREA' nghĩa là cấm ăn uống trong khu vực này.",
+    confidence: "high",
+  },
+  {
+    id: 48,
+    section: "Signs",
+    text: "What does the sign mean?",
+    image: "picture/48.png",
+    options: [
+      "You mustn't wear shoes into this place.",
+      "You can wear shoes into this place.",
+      "You have to take your shoes into this place.",
+      "You don't have to wear shoes into this place.",
+    ],
+    correct: 0,
+    note: "Biển 'Please take off your shoes' yêu cầu phải tháo giày trước khi vào.",
+    confidence: "high",
+  },
 ];
 
 const QUESTIONS = ALL_QUESTIONS.filter((question) => question.id >= 13);
@@ -510,12 +600,22 @@ function render() {
     const card = node.querySelector(".card");
     const index = node.querySelector(".q-index");
     const text = node.querySelector(".q-text");
+    const media = node.querySelector(".q-media");
     const opts = node.querySelector(".opts");
     const analysis = node.querySelector(".analysis");
 
     card.style.animationDelay = `${i * 16}ms`;
     index.textContent = `Câu ${q.id} - ${q.section}`;
     text.textContent = formatDialogueText(q.text);
+
+    if (q.image) {
+      const image = document.createElement("img");
+      image.src = q.image;
+      image.alt = `Biển báo cho câu ${q.id}`;
+      image.loading = "lazy";
+      image.className = "q-image";
+      media.append(image);
+    }
 
     q.options.forEach((opt, j) => {
       const id = `q${i}o${j}`;

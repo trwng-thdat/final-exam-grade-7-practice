@@ -188,6 +188,20 @@ h1 {
   white-space: pre-line;
 }
 
+.q-media {
+  margin: 0 0 10px;
+}
+
+.q-image {
+  width: min(100%, 520px);
+  max-height: 300px;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid rgba(2, 6, 23, 0.12);
+  background: #fff;
+}
+
 .opts {
   display: grid;
   gap: 8px;

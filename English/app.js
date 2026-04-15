@@ -523,6 +523,236 @@ const ALL_QUESTIONS = [
     note: "Biển 'Please take off your shoes' yêu cầu phải tháo giày trước khi vào.",
     confidence: "high",
   },
+  {
+    id: 49,
+    section: "Word Form",
+    type: "fill",
+    text: "We should __________ check our tests before submitting. (care)",
+    accepted: ["carefully"],
+    note: "Sau động từ 'check' cần trạng từ để bổ nghĩa cách kiểm tra, nên dùng 'carefully'.",
+    confidence: "high",
+  },
+  {
+    id: 50,
+    section: "Word Form",
+    type: "fill",
+    text: "My friend __________ the story to me, but I didn't understand. (explanation)",
+    accepted: ["explained"],
+    note: "Câu cần động từ ở quá khứ đơn vì mệnh đề sau dùng 'didn't understand' => 'explained'.",
+    confidence: "high",
+  },
+  {
+    id: 51,
+    section: "Word Form",
+    type: "fill",
+    text: "Sugar is not an __________ food because we need it to live. (health)",
+    accepted: ["unhealthy"],
+    note: "Từ gốc 'health' đổi thành tính từ phủ định 'unhealthy' để khớp nghĩa câu.",
+    confidence: "high",
+  },
+  {
+    id: 52,
+    section: "Word Form",
+    type: "fill",
+    text: "Did they make a __________ not to go to Italy for their vacation? (decide)",
+    accepted: ["decision"],
+    note: "Sau mạo từ 'a' cần danh từ, nên dùng 'decision'.",
+    confidence: "high",
+  },
+  {
+    id: 53,
+    section: "Word Form",
+    type: "fill",
+    text: "Catching the common cold is __________ for everybody. (please)",
+    accepted: ["unpleasant"],
+    note: "Nghĩa câu là 'bị cảm lạnh là điều khó chịu', nên dùng tính từ 'unpleasant'.",
+    confidence: "high",
+  },
+  {
+    id: 54,
+    section: "Word Form",
+    type: "fill",
+    text: "He was the fastest runner in the running __________. (compete)",
+    accepted: ["competition"],
+    note: "Sau cụm 'running' ở đây cần danh từ chỉ sự kiện thi đấu: 'competition'.",
+    confidence: "high",
+  },
+  {
+    id: 55,
+    section: "Word Form",
+    type: "fill",
+    text: "People in my village __________ celebrate Tet every year, with special food, family gatherings, and many traditional activities. (TRADITIONAL)",
+    accepted: ["traditionally"],
+    note: "Cần trạng từ bổ nghĩa cho động từ 'celebrate', nên dùng 'traditionally'.",
+    confidence: "high",
+  },
+  {
+    id: 56,
+    section: "Word Form",
+    type: "fill",
+    text: "Our team __________ the opponent yesterday after a very exciting and competitive match. (DEFEAT)",
+    accepted: ["defeated"],
+    note: "Có mốc thời gian 'yesterday' nên dùng quá khứ đơn: 'defeated'.",
+    confidence: "high",
+  },
+  {
+    id: 57,
+    section: "Word Form",
+    type: "fill",
+    text: "My class will visit some __________ places in Hanoi. (HISTORY)",
+    accepted: ["historical"],
+    note: "Cần tính từ đứng trước danh từ 'places', nên dùng 'historical'.",
+    confidence: "high",
+  },
+  {
+    id: 58,
+    section: "Word Form",
+    type: "fill",
+    text: "This app brings great __________ to users by helping them save time and shop more easily online. (CONVENIENT)",
+    accepted: ["convenience"],
+    note: "Sau tính từ 'great' cần danh từ, nên dùng 'convenience'.",
+    confidence: "high",
+  },
+  {
+    id: 59,
+    section: "Word Form",
+    type: "fill",
+    text: "The trip was such an __________ experience. (FORGET)",
+    accepted: ["unforgettable"],
+    note: "Cụm tự nhiên là 'an unforgettable experience' (một trải nghiệm đáng nhớ).",
+    confidence: "high",
+  },
+  {
+    id: 60,
+    section: "Word Form",
+    type: "fill",
+    text: "His __________ to understand English makes it difficult for him to study abroad. (ABLE)",
+    accepted: ["inability"],
+    note: "Cần danh từ chỉ 'sự không có khả năng', nên dùng 'inability'.",
+    confidence: "high",
+  },
+  {
+    id: 61,
+    section: "Word Form",
+    type: "fill",
+    text: "__________, the pollution was so terrible that I had to stay inside the hotel during the day. (UNLUCKY)",
+    accepted: ["unluckily"],
+    note: "Đầu câu cần trạng từ liên kết toàn câu, nên dùng 'Unluckily'.",
+    confidence: "high",
+  },
+  {
+    id: 62,
+    section: "Word Form",
+    type: "fill",
+    text: "In the year 1905, astronauts __________ life on this planet. (DISCOVERY)",
+    accepted: ["discovered"],
+    note: "Cần động từ quá khứ để diễn tả hành động trong năm 1905: 'discovered'.",
+    confidence: "high",
+  },
+  {
+    id: 63,
+    section: "Word Form",
+    type: "fill",
+    text: "A lovely cat and a __________ dog help him to find his bag. (FRIEND)",
+    accepted: ["friendly"],
+    note: "Cần tính từ đứng trước danh từ 'dog', nên dùng 'friendly'.",
+    confidence: "high",
+  },
+  {
+    id: 64,
+    section: "Word Form",
+    type: "fill",
+    text: "How many __________ are there in the program tonight? (PERFORM)",
+    accepted: ["performers"],
+    note: "Sau 'How many' cần danh từ số nhiều chỉ người biểu diễn: 'performers'.",
+    confidence: "high",
+  },
+  {
+    id: 65,
+    section: "Word Form",
+    type: "fill",
+    text: "__________ energy uses panels to catch sunlight and convert it into electricity. (SUN)",
+    accepted: ["solar"],
+    note: "Cụm đúng là 'solar energy' (năng lượng mặt trời).",
+    confidence: "high",
+  },
+  {
+    id: 66,
+    section: "Word Form",
+    type: "fill",
+    text: "When I first arrived, I spent half a day going __________ around Vancouver. (SIGHTSEE)",
+    accepted: ["sightseeing"],
+    note: "Cụm cố định 'go sightseeing' nghĩa là đi tham quan.",
+    confidence: "high",
+  },
+  {
+    id: 67,
+    section: "Reading - Passage A",
+    text: "Eating a variety of foods and drinking plenty of water are important for good health.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Đoạn văn nói rõ cần ăn đa dạng thực phẩm và nhớ uống nhiều nước.",
+    evidence:
+      "You should eat a variety of foods... Remember to drink a lot of water.",
+    reasoning: "Câu phát biểu lặp lại đúng ý trong bài đọc nên là True.",
+    confidence: "high",
+  },
+  {
+    id: 68,
+    section: "Reading - Passage A",
+    text: "Playing a sport or walking instead of driving can help maintain fitness.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Bài đọc nêu: chơi thể thao thường xuyên và có thể đi bộ thay vì dùng xe.",
+    evidence:
+      "You can play a sport three or four times a week. You can even give up your bikes and cars to walk.",
+    reasoning:
+      "Bài đọc khuyến khích vận động và đi bộ thay phương tiện, nên phát biểu là True.",
+    confidence: "high",
+  },
+  {
+    id: 69,
+    section: "Reading - Passage A",
+    text: "A diet without any sugar or fat is the best way to stay healthy.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Đoạn văn khẳng định chế độ ăn không có đường hoặc chất béo cũng không tốt.",
+    evidence: "A diet without sugar or fat is not good, either.",
+    reasoning:
+      "Phát biểu nói 'best way' nhưng bài đọc nói kiểu ăn đó 'not good', nên là False.",
+    confidence: "high",
+  },
+  {
+    id: 70,
+    section: "Reading - Passage A",
+    text: "Staying fit is easy and requires no effort or determination.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Bài đọc nói để khỏe mạnh cần sự quyết tâm, không phải tự nhiên mà dễ.",
+    evidence:
+      "It is neither difficult nor easy to stay fit. You need to be determined to do good things for your health.",
+    reasoning:
+      "Bài đọc phủ định ý 'easy' và nhấn mạnh cần quyết tâm, nên phát biểu là False.",
+    confidence: "high",
+  },
+  {
+    id: 71,
+    section: "Reading - Passage A",
+    text: "How many guidelines do we need to follow to be fit and healthy?",
+    options: ["two", "three", "four", "one"],
+    correct: 1,
+    note: "Có 3 gợi ý chính trong đoạn: ăn uống lành mạnh, tập thể dục đều đặn, duy trì nếp sinh hoạt.",
+    confidence: "high",
+  },
+  {
+    id: 72,
+    section: "Reading - Passage A",
+    text: "Being fit and healthy, everyone remembers __________ junk food and soft drink.",
+    options: ["eat", "to eat", "to avoid", "to take"],
+    correct: 2,
+    note: "Theo ngữ cảnh của bài đọc, cần tránh đồ ăn vặt và nước ngọt, nên chọn 'to avoid'.",
+    confidence: "high",
+  },
 ];
 
 const QUESTIONS = ALL_QUESTIONS.filter((question) => question.id >= 13);
@@ -543,6 +773,27 @@ const submitBtn = document.getElementById("submitBtn");
 const resetBtn = document.getElementById("resetBtn");
 const shuffleBtn = document.getElementById("shuffleBtn");
 
+const PASSAGE_A = {
+  heading:
+    "Passage A - Nothing is as precious as good health. Following some guidelines to be fit and healthy:",
+  bullets: [
+    {
+      title: "Eat a healthful diet",
+      body: "You should eat a variety of foods. You should not eat too much sugar or fat. A diet without sugar or fat is not good, either. Eat a lot of vegetables. Avoid junk food and soft drinks. Remember to drink a lot of water.",
+    },
+    {
+      title: "Exercise regularly",
+      body: "You can play a sport three or four times a week. You can even give up your bikes and cars to walk.",
+    },
+    {
+      title: "Maintain a daily routine",
+      body: "This routine should balance between life and work. Being under great stress can destroy your health very quickly.",
+    },
+  ],
+  closing:
+    "Good health is what everyone wishes for. It is neither difficult nor easy to stay fit. You need to be determined to do good things for your health.",
+};
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -551,14 +802,32 @@ function shuffle(array) {
 }
 
 function answeredCount() {
-  return state.answers.filter((x) => x !== null).length;
+  return state.answers.reduce((count, answer, index) => {
+    const question = state.questions[index];
+    if (question.type === "fill") {
+      return count + Number(typeof answer === "string" && answer.trim() !== "");
+    }
+    return count + Number(answer !== null);
+  }, 0);
+}
+
+function normalizeText(value) {
+  return String(value).trim().toLowerCase().replace(/\s+/g, "");
+}
+
+function isAnswerCorrect(question, answer) {
+  if (question.type === "fill") {
+    if (typeof answer !== "string") return false;
+    const normalized = normalizeText(answer);
+    return question.accepted.some((item) => normalizeText(item) === normalized);
+  }
+  return answer === question.correct;
 }
 
 function score() {
-  return state.questions.reduce(
-    (sum, q, i) => sum + Number(state.answers[i] === q.correct),
-    0,
-  );
+  return state.questions.reduce((sum, q, i) => {
+    return sum + Number(isAnswerCorrect(q, state.answers[i]));
+  }, 0);
 }
 
 function updateStatus() {
@@ -572,6 +841,28 @@ function confidenceLabel(value) {
   if (value === "high") return "Độ tin cậy: cao";
   if (value === "medium") return "Độ tin cậy: trung bình";
   return "Độ tin cậy: thấp (nên đối chiếu đề gốc/audio)";
+}
+
+function isTrueFalseQuestion(question) {
+  if (!Array.isArray(question.options) || question.options.length !== 2) {
+    return false;
+  }
+  return (
+    normalizeText(question.options[0]) === "true" &&
+    normalizeText(question.options[1]) === "false"
+  );
+}
+
+function buildEvidenceNote(question) {
+  if (!isTrueFalseQuestion(question)) return "";
+  const parts = [];
+  if (question.evidence) {
+    parts.push(`Trích đoạn: "${question.evidence}".`);
+  }
+  if (question.reasoning) {
+    parts.push(`Lý do: ${question.reasoning}`);
+  }
+  return parts.length > 0 ? ` ${parts.join(" ")}` : "";
 }
 
 function formatDialogueText(text) {
@@ -592,6 +883,39 @@ function formatDialogueText(text) {
   return result;
 }
 
+function isReadingPassageAQuestion(question) {
+  return question.id >= 67 && question.id <= 70;
+}
+
+function buildPassageABlock() {
+  const wrapper = document.createElement("section");
+  wrapper.className = "reading-passage";
+
+  const title = document.createElement("h4");
+  title.className = "reading-title";
+  title.textContent = PASSAGE_A.heading;
+  wrapper.append(title);
+
+  const list = document.createElement("div");
+  list.className = "reading-list";
+
+  PASSAGE_A.bullets.forEach((item) => {
+    const row = document.createElement("p");
+    row.className = "reading-item";
+    row.innerHTML = `<strong>+ ${item.title}.</strong> ${item.body}`;
+    list.append(row);
+  });
+
+  wrapper.append(list);
+
+  const closing = document.createElement("p");
+  closing.className = "reading-closing";
+  closing.textContent = PASSAGE_A.closing;
+  wrapper.append(closing);
+
+  return wrapper;
+}
+
 function render() {
   quiz.innerHTML = "";
 
@@ -608,6 +932,11 @@ function render() {
     index.textContent = `Câu ${q.id} - ${q.section}`;
     text.textContent = formatDialogueText(q.text);
 
+    if (isReadingPassageAQuestion(q)) {
+      card.classList.add("reading-card");
+      media.append(buildPassageABlock());
+    }
+
     if (q.image) {
       const image = document.createElement("img");
       image.src = q.image;
@@ -617,47 +946,86 @@ function render() {
       media.append(image);
     }
 
-    q.options.forEach((opt, j) => {
-      const id = `q${i}o${j}`;
-      const label = document.createElement("label");
-      label.className = "opt";
-      label.setAttribute("for", id);
+    if (q.type === "fill") {
+      const fillWrap = document.createElement("div");
+      fillWrap.className = "fill-wrap";
 
-      const input = document.createElement("input");
-      input.type = "radio";
-      input.id = id;
-      input.name = `question-${i}`;
-      input.checked = state.answers[i] === j;
-      input.disabled = state.submitted;
+      const fillLabel = document.createElement("label");
+      fillLabel.className = "fill-label";
+      fillLabel.setAttribute("for", `q${i}fill`);
+      fillLabel.textContent = "Điền từ vào chỗ trống:";
 
-      input.addEventListener("change", () => {
-        state.answers[i] = j;
-        render();
+      const fillInput = document.createElement("input");
+      fillInput.type = "text";
+      fillInput.id = `q${i}fill`;
+      fillInput.className = "fill-input";
+      fillInput.value =
+        typeof state.answers[i] === "string" ? state.answers[i] : "";
+      fillInput.placeholder = "Nhập đáp án...";
+      fillInput.disabled = state.submitted;
+
+      fillInput.addEventListener("input", (event) => {
+        state.answers[i] = event.target.value;
+        updateStatus();
       });
 
-      const span = document.createElement("span");
-      const optionPrefix = `${String.fromCharCode(65 + j)}. `;
-      if (q.optionHtml && q.optionHtml[j]) {
-        span.innerHTML = `${optionPrefix}${q.optionHtml[j]}`;
-      } else {
-        span.textContent = `${optionPrefix}${opt}`;
-      }
+      fillWrap.append(fillLabel, fillInput);
+      opts.append(fillWrap);
+    } else {
+      q.options.forEach((opt, j) => {
+        const id = `q${i}o${j}`;
+        const label = document.createElement("label");
+        label.className = "opt";
+        label.setAttribute("for", id);
 
-      if (state.answers[i] === j) label.classList.add("selected");
-      if (state.submitted && j === q.correct) label.classList.add("correct");
-      if (state.submitted && state.answers[i] === j && j !== q.correct)
-        label.classList.add("wrong");
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.id = id;
+        input.name = `question-${i}`;
+        input.checked = state.answers[i] === j;
+        input.disabled = state.submitted;
 
-      label.append(input, span);
-      opts.append(label);
-    });
+        input.addEventListener("change", () => {
+          state.answers[i] = j;
+          render();
+        });
+
+        const span = document.createElement("span");
+        const optionPrefix = `${String.fromCharCode(65 + j)}. `;
+        if (q.optionHtml && q.optionHtml[j]) {
+          span.innerHTML = `${optionPrefix}${q.optionHtml[j]}`;
+        } else {
+          span.textContent = `${optionPrefix}${opt}`;
+        }
+
+        if (state.answers[i] === j) label.classList.add("selected");
+        if (state.submitted && j === q.correct) label.classList.add("correct");
+        if (state.submitted && state.answers[i] === j && j !== q.correct)
+          label.classList.add("wrong");
+
+        label.append(input, span);
+        opts.append(label);
+      });
+    }
 
     if (state.submitted) {
-      const isCorrect = state.answers[i] === q.correct;
-      const rightText = `${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}`;
-      analysis.textContent = isCorrect
-        ? `Đúng. ${q.note} (${confidenceLabel(q.confidence)})`
-        : `Sai. Đáp án đúng: ${rightText}. ${q.note} (${confidenceLabel(q.confidence)})`;
+      const isCorrect = isAnswerCorrect(q, state.answers[i]);
+      if (q.type === "fill") {
+        const userText =
+          typeof state.answers[i] === "string" && state.answers[i].trim() !== ""
+            ? state.answers[i].trim()
+            : "(chưa điền)";
+        const rightText = q.accepted[0];
+        analysis.textContent = isCorrect
+          ? `Đúng. ${q.note} (${confidenceLabel(q.confidence)})`
+          : `Sai. Bạn điền: ${userText}. Đáp án đúng: ${rightText}. ${q.note} (${confidenceLabel(q.confidence)})`;
+      } else {
+        const rightText = `${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}`;
+        const evidenceText = buildEvidenceNote(q);
+        analysis.textContent = isCorrect
+          ? `Đúng. ${q.note}${evidenceText} (${confidenceLabel(q.confidence)})`
+          : `Sai. Đáp án đúng: ${rightText}. ${q.note}${evidenceText} (${confidenceLabel(q.confidence)})`;
+      }
       analysis.classList.add(isCorrect ? "ok" : "bad");
     }
 
@@ -678,7 +1046,7 @@ submitBtn.addEventListener("click", () => {
       ? "Rất tốt!"
       : ratio >= 0.65
         ? "Khá ổn, cố gắng thêm một chút nữa."
-        : "Bạn nên ôn lại phần ngữ pháp và trọng âm.";
+        : "Bạn nên ôn lại phần ngữ pháp, trọng âm và word form.";
 
   resultBanner.textContent = `Kết quả: ${s}/${state.questions.length}. ${summary} (Các câu chưa chọn sẽ được tính là sai.)`;
   resultBanner.classList.add("show");

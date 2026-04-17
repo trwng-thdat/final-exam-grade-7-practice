@@ -174,6 +174,146 @@ const QUESTIONS = [
     options: ["2", "3", "4", "5"],
     correct: 0,
   },
+  {
+    text: "Nguyên tố O có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "16, II, 8",
+      "16, I, 8",
+      "8, II, 16",
+      "16, II, 16",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố H có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "1, I, 1",
+      "1, II, 1",
+      "2, I, 1",
+      "1, I, 2",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố C có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "12, IV, 6",
+      "12, II, 6",
+      "6, IV, 12",
+      "12, IV, 12",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố N có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "14, III, 7",
+      "14, V, 7",
+      "7, III, 14",
+      "14, III, 14",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Na có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "23, I, 11",
+      "23, II, 11",
+      "11, I, 23",
+      "23, I, 23",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Mg có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "24, II, 12",
+      "24, I, 12",
+      "12, II, 24",
+      "24, II, 24",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Al có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "27, III, 13",
+      "27, II, 13",
+      "13, III, 27",
+      "27, III, 27",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Si có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "28, IV, 14",
+      "28, II, 14",
+      "14, IV, 28",
+      "28, IV, 28",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố P có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "31, III, 15",
+      "31, V, 15",
+      "15, III, 31",
+      "31, III, 31",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố S có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "32, II, 16",
+      "32, IV, 16",
+      "16, II, 32",
+      "32, II, 32",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Cl có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "35.5, I, 17",
+      "35.5, II, 17",
+      "17, I, 35.5",
+      "35.5, I, 35",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố K có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "39, I, 19",
+      "39, II, 19",
+      "19, I, 39",
+      "39, I, 39",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Ca có nguyên tử khối, hóa trị và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "40, II, 20",
+      "40, I, 20",
+      "20, II, 40",
+      "40, II, 40",
+    ],
+    correct: 0,
+  },
+  {
+    text: "Nguyên tố Fe có nguyên tử khối, hóa trị thường gặp và số hiệu nguyên tử lần lượt là bao nhiêu?",
+    options: [
+      "56, II, 26",
+      "56, III, 26",
+      "26, II, 56",
+      "56, II, 56",
+    ],
+    correct: 0,
+  },
 ];
 
 const state = {

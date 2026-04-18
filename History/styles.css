@@ -1,0 +1,690 @@
+:root {
+  --bg-1: #f3e5ff;
+  --bg-2: #e8d5ff;
+  --surface: #fffcf4;
+  --ink: #1e1d16;
+  --ink-soft: #58574f;
+  --brand: #6b21a8;
+  --brand-strong: #4c0d61;
+  --accent: #a855f7;
+  --highlight: #d946ef;
+  --sky: #8b5cf6;
+  --danger: #b8332a;
+  --ok: #197b30;
+  --ring: rgba(139, 92, 246, 0.25);
+  --shadow: 0 16px 40px rgba(107, 33, 168, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(168, 85, 247, 0.28),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(107, 33, 168, 0.22),
+      transparent 44%
+    ),
+    radial-gradient(
+      circle at 20% 86%,
+      rgba(139, 92, 246, 0.24),
+      transparent 38%
+    ),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  padding: 28px 16px 48px;
+}
+
+.bg-shape {
+  position: fixed;
+  width: 38vmax;
+  height: 38vmax;
+  border-radius: 50%;
+  filter: blur(54px);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+  animation: float 9s ease-in-out infinite;
+}
+
+.bg-shape-1 {
+  background: #a855f7;
+  top: -18vmax;
+  right: -10vmax;
+}
+
+.bg-shape-2 {
+  background: var(--brand);
+  left: -14vmax;
+  bottom: -14vmax;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  background: color-mix(in srgb, var(--surface) 88%, white);
+  border: 1px solid rgba(24, 35, 28, 0.12);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 32px 24px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.subject-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+  background: rgba(168, 85, 247, 0.06);
+  transition: all 0.2s ease;
+}
+
+.subject-switch:hover {
+  transform: translateY(-2px);
+  background: rgba(168, 85, 247, 0.12);
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--sky);
+}
+
+h1 {
+  margin: 4px 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid rgba(24, 35, 28, 0.08);
+  padding-bottom: 12px;
+}
+
+.mode-tab {
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.mode-tab:hover {
+  color: var(--brand);
+}
+
+.mode-tab.active {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+}
+
+.status-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.status-item {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(24, 35, 28, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.status-label {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-value {
+  margin: 8px 0 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--brand);
+}
+
+.mode-content {
+  display: none;
+}
+
+.mode-content.active {
+  display: block;
+}
+
+/* Fill-in-the-blank styles */
+.question-selector {
+  margin-bottom: 24px;
+}
+
+.label-text {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.select-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.95rem;
+  border: 2px solid rgba(24, 35, 28, 0.12);
+  border-radius: 12px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.select-input:hover {
+  border-color: var(--brand);
+  background: rgba(168, 85, 247, 0.04);
+}
+
+.select-input:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.question-content {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(24, 35, 28, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+.question-text p {
+  margin: 16px 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.question-text p strong {
+  color: var(--brand);
+  display: block;
+  margin: 20px 0 12px;
+  font-size: 1rem;
+}
+
+.blank {
+  padding: 12px 16px;
+  border: 2px solid var(--brand);
+  border-radius: 8px;
+  min-width: 180px;
+  width: min(100%, 24ch);
+  max-width: 100%;
+  font-size: 0.95em;
+  background-color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--ink);
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.inline-answer {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.inline-answer.ok {
+  color: var(--ok);
+}
+
+.inline-answer.bad {
+  color: var(--danger);
+}
+
+.blank:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 3px var(--ring);
+  background-color: rgba(168, 85, 247, 0.05);
+}
+
+.blank.correct {
+  border-color: var(--ok);
+  background-color: rgba(25, 123, 48, 0.1);
+  color: var(--ink);
+}
+
+.blank.incorrect {
+  border-color: var(--danger);
+  background-color: rgba(184, 51, 42, 0.1);
+  color: var(--ink);
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-4px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+/* Multiple choice styles */
+.mcq-status {
+  margin-bottom: 14px;
+}
+
+.result-banner {
+  display: none;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(107, 33, 168, 0.25);
+  background: linear-gradient(
+    130deg,
+    rgba(107, 33, 168, 0.12),
+    rgba(168, 85, 247, 0.14)
+  );
+  font-weight: 700;
+}
+
+.result-banner.show {
+  display: block;
+  animation: slideIn 0.3s ease both;
+}
+
+.progress-track {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 16px;
+  background: rgba(24, 35, 28, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  transition: width 250ms ease;
+}
+
+.mcq-toolbar {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.question-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(244, 232, 255, 0.88)
+  );
+  border: 1px solid rgba(24, 35, 28, 0.14);
+  border-radius: 16px;
+  padding: 14px;
+  animation: slideIn 0.3s ease both;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.question-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(76, 13, 97, 0.12);
+}
+
+.question-index {
+  margin: 0 0 6px;
+  color: var(--brand-strong);
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.question-title {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.options {
+  display: grid;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(24, 35, 28, 0.2);
+  background: white;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.option:hover {
+  border-color: var(--brand);
+  transform: translateX(2px);
+}
+
+.option.selected {
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 3px rgba(217, 70, 239, 0.16);
+}
+
+.option.correct {
+  border-color: var(--ok);
+  background: rgba(25, 123, 48, 0.08);
+}
+
+.option.wrong {
+  border-color: var(--danger);
+  background: rgba(184, 51, 42, 0.08);
+}
+
+.option input {
+  margin-top: 3px;
+  accent-color: var(--brand);
+}
+
+.feedback {
+  min-height: 1.2rem;
+  margin: 10px 0 0;
+  font-weight: 700;
+}
+
+.feedback.ok {
+  color: var(--ok);
+}
+
+.feedback.bad {
+  color: var(--danger);
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions .btn {
+  min-width: 150px;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  color: white;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: rgba(217, 70, 239, 0.1);
+  color: var(--brand);
+  border: 2px solid var(--accent);
+}
+
+.btn-secondary:hover {
+  background: rgba(217, 70, 239, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
+
+.btn-outline:hover {
+  background: rgba(168, 85, 247, 0.05);
+  transform: translateY(-2px);
+}
+
+.result-message {
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  animation: slideIn 0.3s ease;
+  display: none;
+  border: 1px solid;
+}
+
+.result-message.show {
+  display: block;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success {
+  background-color: rgba(25, 123, 48, 0.1);
+  color: #166534;
+  border-color: rgba(25, 123, 48, 0.3);
+}
+
+.partial {
+  background-color: rgba(217, 119, 6, 0.1);
+  color: #92400e;
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+.answers-display {
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 4px solid var(--brand);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.answers-display strong {
+  color: var(--brand);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.answers-display ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.answers-display li {
+  padding: 6px 0;
+  color: var(--ink);
+  position: relative;
+  padding-left: 20px;
+}
+
+.answers-display li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--ok);
+  font-weight: bold;
+}
+
+.hint-message {
+  background: rgba(139, 92, 246, 0.1);
+  padding: 16px 20px;
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  color: var(--ink);
+  margin-bottom: 20px;
+  display: none;
+  animation: slideIn 0.3s ease;
+}
+
+.hint-message.show {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .app {
+    padding: 20px 16px;
+  }
+
+  .topbar {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .status-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    grid-template-columns: 1fr;
+  }
+
+  .blank {
+    min-width: 100%;
+    display: block;
+    margin: 8px 0;
+  }
+
+  .question-content {
+    padding: 16px;
+  }
+
+  .mode-tabs {
+    flex-direction: column;
+  }
+
+  .mode-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .option {
+    padding: 12px;
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

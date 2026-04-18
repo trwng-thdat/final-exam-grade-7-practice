@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luyện Tập Lịch Sử</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <main class="app" id="app">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Ôn Tập Cuối Kì II</p>
+          <h1>Luyện Tập Lịch Sử</h1>
+        </div>
+        <a class="subject-switch" href="../Geography/index.html">
+          Qua môn Địa lý
+        </a>
+      </header>
+
+      <div class="mode-tabs">
+        <button
+          class="mode-tab active"
+          onclick="switchMode('fillblank')"
+          id="tab-fillblank"
+        >
+          ✍️ Điền Từ
+        </button>
+        <button
+          class="mode-tab"
+          onclick="switchMode('multiple')"
+          id="tab-multiple"
+        >
+          ✓ Trắc Nghiệm (40 câu)
+        </button>
+      </div>
+
+      <section class="status-panel">
+        <div class="status-item">
+          <p class="status-label">Tiến độ</p>
+          <p class="status-value" id="progressText">0 / 4</p>
+        </div>
+        <div class="status-item">
+          <p class="status-label">Hoàn thành</p>
+          <p class="status-value" id="completed">0</p>
+        </div>
+      </section>
+
+      <div id="fillblank-mode" class="mode-content active">
+        <div class="question-selector">
+          <label for="question-select" class="label-text">Chọn câu hỏi:</label>
+          <select
+            id="question-select"
+            onchange="loadQuestion()"
+            class="select-input"
+          >
+            <option value="0">
+              Câu 1: Nguyên nhân thắng lợi và ý nghĩa lịch sử của 3 lần kháng
+              chiến chống quân Mông Nguyên
+            </option>
+            <option value="1">
+              Câu 2: Nhà Hồ đã có những cải cách như thế nào
+            </option>
+            <option value="2">
+              Câu 3: Hoàn cảnh dẫn đến khởi nghĩa Lam Sơn và tình hình những năm
+              đầu
+            </option>
+            <option value="3">Câu 4: Thành lập nhà Lê Sơ</option>
+          </select>
+        </div>
+
+        <section id="question-content" class="question-content"></section>
+
+        <div id="result" class="result-message" aria-live="polite"></div>
+        <div id="hint" class="hint-message" aria-live="polite"></div>
+
+        <div class="button-group">
+          <button
+            id="submit-btn"
+            onclick="checkAnswer()"
+            class="btn btn-primary"
+          >
+            ✓ Kiểm Tra Đáp Án
+          </button>
+
+          <button
+            id="reset-btn"
+            onclick="resetQuestion()"
+            class="btn btn-outline"
+          >
+            🔄 Làm Lại
+          </button>
+        </div>
+      </div>
+
+      <div id="multiple-mode" class="mode-content">
+        <section class="status-panel mcq-status">
+          <div class="status-item">
+            <p class="status-label">Đã trả lời</p>
+            <p class="status-value" id="mcqProgressText">0 / 40</p>
+          </div>
+          <div class="status-item">
+            <p class="status-label">Điểm hiện tại</p>
+            <p class="status-value" id="mcqScoreText">0</p>
+          </div>
+        </section>
+
+        <section
+          id="mcqResultBanner"
+          class="result-banner"
+          aria-live="polite"
+        ></section>
+
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="mcqProgressFill"></div>
+        </div>
+
+        <section class="mcq-toolbar">
+          <button id="mcqShuffleBtn" class="btn btn-outline" type="button">
+            Đảo Câu Hỏi
+          </button>
+        </section>
+
+        <section id="mcqContainer" class="quiz-grid"></section>
+
+        <footer class="actions">
+          <button id="mcqSubmitBtn" class="btn btn-primary" type="button">
+            Nộp Bài
+          </button>
+          <button id="mcqResetBtn" class="btn btn-secondary" type="button">
+            Làm Lại
+          </button>
+        </footer>
+      </div>
+    </main>
+
+    <template id="mcqQuestionTemplate">
+      <article class="question-card">
+        <p class="question-index"></p>
+        <h2 class="question-title"></h2>
+        <div class="options"></div>
+        <p class="feedback"></p>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

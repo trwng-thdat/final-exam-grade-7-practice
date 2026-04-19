@@ -627,7 +627,7 @@ const ALL_QUESTIONS = [
     section: "Word Form",
     type: "fill",
     text: "His __________ to understand English makes it difficult for him to study abroad. (ABLE)",
-    accepted: ["inability"],
+    accepted: ["ability"],
     note: "Cần danh từ chỉ 'sự không có khả năng', nên dùng 'inability'.",
     confidence: "high",
   },
@@ -653,7 +653,7 @@ const ALL_QUESTIONS = [
     id: 63,
     section: "Word Form",
     type: "fill",
-    text: "A lovely cat and a __________ dog help him to find his bag. (FRIEND)",
+    text: "A lovely  cat and a __________ dog help him to find his bag. (FRIEND)",
     accepted: ["friendly"],
     note: "Cần tính từ đứng trước danh từ 'dog', nên dùng 'friendly'.",
     confidence: "high",
@@ -753,6 +753,150 @@ const ALL_QUESTIONS = [
     note: "Theo ngữ cảnh của bài đọc, cần tránh đồ ăn vặt và nước ngọt, nên chọn 'to avoid'.",
     confidence: "high",
   },
+  {
+    id: 73,
+    section: "Reading - Passage B",
+    text: "English is spoken as a first or second language in many countries.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Đoạn văn nêu rõ English is spoken in many countries as a first or second language.",
+    evidence: "It is spoken in many countries as a first or second language.",
+    reasoning: "Phát biểu trùng khớp trực tiếp với thông tin trong bài đọc.",
+    confidence: "high",
+  },
+  {
+    id: 74,
+    section: "Reading - Passage B",
+    text: "English is mainly used only in education.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Đoạn văn nhấn mạnh English còn quan trọng trong business, technology, research và giao tiếp quốc tế.",
+    evidence:
+      "One reason English is so widely used is its importance in business and technology.",
+    reasoning: "Không chỉ dùng trong giáo dục nên phát biểu này là sai.",
+    confidence: "high",
+  },
+  {
+    id: 75,
+    section: "Reading - Passage B",
+    text: "Some learners find English pronunciation and grammar difficult.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Bài đọc nêu trực tiếp khó khăn ở phát âm và ngữ pháp.",
+    evidence: "Some learners find its pronunciation and grammar challenging.",
+    reasoning: "Phát biểu đúng theo nguyên văn của đoạn.",
+    confidence: "high",
+  },
+  {
+    id: 76,
+    section: "Reading - Passage B",
+    text: "English is unhelpful for international communication.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Đoạn văn cho biết English plays a key role in international communication.",
+    evidence: "It plays a key role in international communication.",
+    reasoning: "Trái ngược với nội dung bài đọc nên là False.",
+    confidence: "high",
+  },
+  {
+    id: 77,
+    section: "Reading - Passage B",
+    text: "What is the best title for the passage?",
+    options: [
+      "learning difficulties",
+      "school subject",
+      "modern technology",
+      "global communication tool",
+    ],
+    correct: 3,
+    note: "Nội dung xoay quanh vai trò toàn cầu của tiếng Anh trong giao tiếp, việc làm và kết nối.",
+    confidence: "high",
+  },
+  {
+    id: 78,
+    section: "Reading - Passage B",
+    text: 'The word "it" in the sentence "because it offers better job opportunities and helps them connect..." refers to:',
+    options: [
+      "job opportunities",
+      "learning English",
+      "people",
+      "studying abroad",
+    ],
+    correct: 1,
+    note: "Trong ngữ cảnh câu, 'it' thay cho hành động learning English.",
+    confidence: "high",
+  },
+  {
+    id: 79,
+    section: "Reading - Passage C",
+    text: "Population problems are the same all over the world.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Đoạn văn mở đầu khẳng định vấn đề dân số khác nhau ở các khu vực khác nhau.",
+    evidence:
+      "Population problems are different in different parts of the world.",
+    reasoning:
+      "Vì đề bài nói 'the same' nên trái nghĩa với đoạn văn và là False.",
+    confidence: "high",
+  },
+  {
+    id: 80,
+    section: "Reading - Passage C",
+    text: "In Europe, young couples usually have more than two children.",
+    options: ["True", "False"],
+    correct: 1,
+    note: "Đoạn văn cho biết nhiều người trẻ chỉ có một con hoặc không có con.",
+    evidence:
+      "The birth rate is low because many young people have only one child or none at all.",
+    reasoning:
+      "Nội dung trái ngược với phát biểu 'more than two children', nên False.",
+    confidence: "high",
+  },
+  {
+    id: 81,
+    section: "Reading - Passage C",
+    text: "The population of Africa has increased rapidly.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Đoạn văn nêu rõ dân số châu Phi đã tăng nhanh trong 40 năm qua.",
+    evidence: "The population has grown rapidly over the last 40 years.",
+    reasoning: "Phát biểu khớp nguyên ý trong bài đọc nên là True.",
+    confidence: "high",
+  },
+  {
+    id: 82,
+    section: "Reading - Passage C",
+    text: "Asia has the highest population growth rate in the world.",
+    options: ["True", "False"],
+    correct: 0,
+    note: "Đoạn văn ghi rõ châu Á có tốc độ tăng dân số cao nhất hiện nay.",
+    evidence: "It also has the highest population growth rate today.",
+    reasoning: "Phát biểu trùng với thông tin đoạn văn nên là True.",
+    confidence: "high",
+  },
+  {
+    id: 83,
+    section: "Reading - Passage C",
+    text: "How do people feel after they retire?",
+    options: ["delighted", "lonely", "sad", "awful"],
+    correct: 1,
+    note: "Đoạn văn nêu: After retirement, they feel lonely.",
+    confidence: "high",
+  },
+  {
+    id: 84,
+    section: "Reading - Passage C",
+    text: "Why do many African families have a lot of children?",
+    options: [
+      "to go to school",
+      "to look after older people",
+      "to look after babies",
+      "to take after older people",
+    ],
+    correct: 1,
+    note: "Bài đọc nói nhiều gia đình có nhiều con để chăm sóc người lớn tuổi và giúp làm việc trên đất đai.",
+    confidence: "high",
+  },
 ];
 
 const QUESTIONS = ALL_QUESTIONS.filter((question) => question.id >= 13);
@@ -792,6 +936,25 @@ const PASSAGE_A = {
   ],
   closing:
     "Good health is what everyone wishes for. It is neither difficult nor easy to stay fit. You need to be determined to do good things for your health.",
+};
+
+const PASSAGE_B = {
+  heading: "Passage B",
+  paragraphs: [
+    "English is one of the most important languages in the world. It is spoken in many countries as a first or second language, so it plays a key role in international communication.",
+    "One reason English is so widely used is its importance in business and technology. Many international companies use English as their main working language. In addition, most scientific research and online content are written in English.",
+    "However, learning English is not always easy. Some learners find its pronunciation and grammar challenging. Despite these difficulties, many people continue to study English because it offers better job opportunities and helps them connect with people from different cultures.",
+    "For these reasons, English is considered a global language and is widely used around the world today.",
+  ],
+};
+
+const PASSAGE_C = {
+  heading: "Passage C",
+  paragraphs: [
+    "Population problems are different in different parts of the world. For example, in many European countries, the population is getting older. The birth rate is low because many young people have only one child or none at all. After retirement, they feel lonely and often very poor because they don't save enough money.",
+    "In Africa, the population problems are very different. The population has grown rapidly over the last 40 years, and it has a relatively young population. Many families continue to have large numbers of children to look after older people and to help on the land.",
+    "Asia is the largest and most populous of Earth's continents. It also has the highest population growth rate today, and its population almost quadrupled during the 20th century. The Asian population will continue to grow, increasing pressure on the region's natural resources.",
+  ],
 };
 
 function shuffle(array) {
@@ -887,6 +1050,14 @@ function isReadingPassageAQuestion(question) {
   return question.id >= 67 && question.id <= 70;
 }
 
+function isReadingPassageBQuestion(question) {
+  return question.id >= 73 && question.id <= 78;
+}
+
+function isReadingPassageCQuestion(question) {
+  return question.id >= 79 && question.id <= 84;
+}
+
 function buildPassageABlock() {
   const wrapper = document.createElement("section");
   wrapper.className = "reading-passage";
@@ -916,6 +1087,44 @@ function buildPassageABlock() {
   return wrapper;
 }
 
+function buildPassageBBlock() {
+  const wrapper = document.createElement("section");
+  wrapper.className = "reading-passage";
+
+  const title = document.createElement("h4");
+  title.className = "reading-title";
+  title.textContent = PASSAGE_B.heading;
+  wrapper.append(title);
+
+  PASSAGE_B.paragraphs.forEach((paragraph) => {
+    const item = document.createElement("p");
+    item.className = "reading-item";
+    item.textContent = paragraph;
+    wrapper.append(item);
+  });
+
+  return wrapper;
+}
+
+function buildPassageCBlock() {
+  const wrapper = document.createElement("section");
+  wrapper.className = "reading-passage";
+
+  const title = document.createElement("h4");
+  title.className = "reading-title";
+  title.textContent = PASSAGE_C.heading;
+  wrapper.append(title);
+
+  PASSAGE_C.paragraphs.forEach((paragraph) => {
+    const item = document.createElement("p");
+    item.className = "reading-item";
+    item.textContent = paragraph;
+    wrapper.append(item);
+  });
+
+  return wrapper;
+}
+
 function render() {
   quiz.innerHTML = "";
 
@@ -935,6 +1144,16 @@ function render() {
     if (isReadingPassageAQuestion(q)) {
       card.classList.add("reading-card");
       media.append(buildPassageABlock());
+    }
+
+    if (isReadingPassageBQuestion(q)) {
+      card.classList.add("reading-card");
+      media.append(buildPassageBBlock());
+    }
+
+    if (isReadingPassageCQuestion(q)) {
+      card.classList.add("reading-card");
+      media.append(buildPassageCBlock());
     }
 
     if (q.image) {

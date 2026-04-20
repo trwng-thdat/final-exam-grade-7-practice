@@ -178,6 +178,10 @@ h2 {
   background: linear-gradient(135deg, #047857, #0284c7);
 }
 
+.btn-tech {
+  background: linear-gradient(135deg, #0f766e, #16a34a);
+}
+
 @keyframes float {
   0%,
   100% {

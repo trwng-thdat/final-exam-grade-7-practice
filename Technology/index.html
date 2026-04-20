@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luyện Trắc Nghiệm Công Nghệ - Cuối Kì II</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <main class="app" id="app">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Ôn Tập Cuối Kì II</p>
+          <h1>Luyện Trắc Nghiệm Công Nghệ</h1>
+        </div>
+        <button id="shuffleBtn" class="btn btn-ghost" type="button">
+          Đảo Câu Hỏi
+        </button>
+      </header>
+
+      <section class="status-panel">
+        <div class="status-item">
+          <p class="status-label">Tiến độ</p>
+          <p class="status-value" id="progressText">0 / 18</p>
+        </div>
+        <div class="status-item">
+          <p class="status-label">Điểm hiện tại</p>
+          <p class="status-value" id="scoreText">0</p>
+        </div>
+      </section>
+
+      <section
+        id="resultBanner"
+        class="result-banner"
+        aria-live="polite"
+      ></section>
+
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <section id="quizContainer" class="quiz-container"></section>
+
+      <footer class="actions">
+        <button id="submitBtn" class="btn btn-primary" type="button">
+          Nộp Bài
+        </button>
+        <button id="resetBtn" class="btn btn-secondary" type="button">
+          Làm Lại
+        </button>
+      </footer>
+    </main>
+
+    <template id="questionTemplate">
+      <article class="question-card">
+        <p class="question-index"></p>
+        <h2 class="question-title"></h2>
+        <div class="options"></div>
+        <p class="feedback"></p>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

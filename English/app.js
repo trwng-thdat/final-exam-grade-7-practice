@@ -897,13 +897,339 @@ const ALL_QUESTIONS = [
     note: "Bài đọc nói nhiều gia đình có nhiều con để chăm sóc người lớn tuổi và giúp làm việc trên đất đai.",
     confidence: "high",
   },
+  {
+    id: 85,
+    section: "Reading - Passage D",
+    text: "how many suitcases should I take ________ what can I bring in my backpack?",
+    options: ["and", "or", "because", "but"],
+    correct: 0,
+    note: "Liên từ nối hai câu hỏi song song: and.",
+    confidence: "high",
+  },
+  {
+    id: 86,
+    section: "Reading - Passage D",
+    text: "the more ________ you bring, the more expensive the ticket is.",
+    options: ["passport", "Boarding pass", "money", "luggage"],
+    correct: 3,
+    note: "Nghĩa câu là: mang càng nhiều hành lý thì vé càng đắt.",
+    confidence: "high",
+  },
+  {
+    id: 87,
+    section: "Reading - Passage D",
+    text: "not to take ________ items like large batteries or sharp objects.",
+    options: ["Larger", "dangerous", "Careful", "many"],
+    correct: 1,
+    note: "Từ cần đi với 'items' là dangerous.",
+    confidence: "high",
+  },
+  {
+    id: 88,
+    section: "Reading - Passage D",
+    text: "________ I'll have to go through customs.",
+    options: ["although", "However", "Because", "so"],
+    correct: 2,
+    note: "Nguyên nhân được nối bằng because.",
+    confidence: "high",
+  },
+  {
+    id: 89,
+    section: "Reading - Passage D",
+    text: "get ________ the plane.",
+    options: ["on", "off", "through", "from"],
+    correct: 0,
+    note: "Cụm đúng là get on the plane.",
+    confidence: "high",
+  },
+  {
+    id: 90,
+    section: "Reading - Passage D",
+    text: "able to ________ me know more about air traveling.",
+    options: ["hope", "handle", "hold", "help"],
+    correct: 3,
+    note: "Cấu trúc đúng là help me know more.",
+    confidence: "high",
+  },
+  {
+    id: 91,
+    section: "Reading - Passage E",
+    text: "Brazil's Carnival, ________ is considered by many to be 'the greatest show on Earth.'",
+    options: ["which", "who", "where", "whose"],
+    correct: 0,
+    note: "Đại từ quan hệ chỉ sự vật: which.",
+    confidence: "high",
+  },
+  {
+    id: 92,
+    section: "Reading - Passage E",
+    text: "travel to Brazil ________ they want to enjoy this exciting celebration.",
+    options: ["but", "so", "because", "although"],
+    correct: 2,
+    note: "Nêu lý do nên dùng because.",
+    confidence: "high",
+  },
+  {
+    id: 93,
+    section: "Reading - Passage E",
+    text: "The festival is very ________ with live music and dancing in the streets.",
+    options: ["boring", "dramatic", "dangerous", "crowded"],
+    correct: 3,
+    note: "Lễ hội đông đúc: crowded.",
+    confidence: "high",
+  },
+  {
+    id: 94,
+    section: "Reading - Passage E",
+    text: "More than 70 samba schools ________ every year for prizes.",
+    options: ["compete", "competes", "competed", "competing"],
+    correct: 0,
+    note: "Chủ ngữ số nhiều nên dùng động từ nguyên mẫu: compete.",
+    confidence: "high",
+  },
+  {
+    id: 95,
+    section: "Reading - Passage E",
+    text: "take part ________ a parade.",
+    options: ["at", "in", "on", "for"],
+    correct: 1,
+    note: "Cụm cố định: take part in.",
+    confidence: "high",
+  },
+  {
+    id: 96,
+    section: "Reading - Passage E",
+    text: "The festival ________ before the Catholic season of Lent.",
+    options: ["begin", "began", "begins", "beginning"],
+    correct: 2,
+    note: "Sự thật hiển nhiên nên dùng hiện tại đơn: begins.",
+    confidence: "high",
+  },
+  {
+    id: 97,
+    section: "Reading - Passage F",
+    text: "Last spring, I ________ my cousin living in Ho Chi Minh City.",
+    options: ["visit", "visits", "visited", "visiting"],
+    correct: 2,
+    note: "last spring -> quá khứ đơn: visited.",
+    confidence: "high",
+  },
+  {
+    id: 98,
+    section: "Reading - Passage F",
+    text: "I had such a great time, ________ I want to share my personal experience.",
+    options: ["so", "and", "but", "or"],
+    correct: 1,
+    note: "Theo ảnh đáp án là and.",
+    confidence: "high",
+  },
+  {
+    id: 99,
+    section: "Reading - Passage F",
+    text: "Tet is a celebration of the start of ________.",
+    options: ["spring", "summer", "autumn", "winter"],
+    correct: 0,
+    note: "Tết gắn với sự khởi đầu của mùa xuân.",
+    confidence: "high",
+  },
+  {
+    id: 100,
+    section: "Reading - Passage F",
+    text: "The city is ________ of flower vendors.",
+    options: ["made", "fond", "full", "proud"],
+    correct: 2,
+    note: "Cụm đúng: full of.",
+    confidence: "high",
+  },
+  {
+    id: 101,
+    section: "Reading - Passage F",
+    text: "for ________ loved ones who have passed away.",
+    options: ["my", "her", "your", "their"],
+    correct: 3,
+    note: "Nói về loved ones của họ: their.",
+    confidence: "high",
+  },
+  {
+    id: 102,
+    section: "Reading - Passage F",
+    text: "for families to ________ to their hometown to celebrate the New Year.",
+    options: ["return", "leave", "replace", "repeat"],
+    correct: 0,
+    note: "Cụm đúng là return to their hometown.",
+    confidence: "high",
+  },
+  {
+    id: 103,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "There were wild streets ___ when England won the Cup. (celebration)",
+    accepted: ["celebrations"],
+    note: "Cụm đúng theo đề là 'street celebrations'.",
+    confidence: "high",
+  },
+  {
+    id: 104,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "They organized a dinner ____ the year's successes. (celebration)",
+    accepted: ["in celebration of"],
+    note: "Cụm cố định: in celebration of.",
+    confidence: "high",
+  },
+  {
+    id: 105,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "The school library informs students about the ___ books and online resources every semester. (availability)",
+    accepted: ["availability of"],
+    note: "Cụm đúng: availability of books and resources.",
+    confidence: "high",
+  },
+  {
+    id: 106,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "Tickets for the special cultural tours during the festival ____, so visitors are advised to book early to secure their spots. (availability)",
+    accepted: ["subject to availability", "are subject to availability"],
+    note: "Cụm đúng theo đề: subject to availability.",
+    confidence: "high",
+  },
+  {
+    id: 107,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "There is now intense ___ schools to attract students. (competition)",
+    accepted: ["competition between"],
+    note: "Cụm đúng: competition between schools.",
+    confidence: "high",
+  },
+  {
+    id: 108,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "She plans to go into ___ her classmates. (competition)",
+    accepted: ["competition with"],
+    note: "Cụm đúng: go into competition with.",
+    confidence: "high",
+  },
+  {
+    id: 110,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "My suitcase is medium-sized and old. Its color is dark red.\n-> I have ___.",
+    accepted: [
+      "a medium-sized old dark red suitcase",
+      "a medium-sized old dark red suitcase.",
+    ],
+    note: "Sắp xếp tính từ theo cụm trong đề mẫu.",
+    confidence: "high",
+  },
+  {
+    id: 112,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "I had to spend two hours finishing my assignment.\n-> It took ___.",
+    accepted: [
+      "me two hours to finish my assignment",
+      "me two hours to finish my assignment.",
+    ],
+    note: "Đổi cấu trúc spend time doing -> It took + someone + time + to V.",
+    confidence: "high",
+  },
+  {
+    id: 114,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "She gave me a grey suitcase. It is large and quite old.\n-> She gave me ___.",
+    accepted: [
+      "a large quite old grey suitcase",
+      "a large quite old grey suitcase.",
+    ],
+    note: "Sắp xếp cụm tính từ theo đề mẫu.",
+    confidence: "high",
+  },
+  {
+    id: 116,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "Jimmy spent so much time doing the assignment that the teacher assigned last week.\n-> It took ___.",
+    accepted: [
+      "Jimmy so much time to do the assignment that the teacher assigned last week",
+      "Jimmy so much time to do the assignment that the teacher assigned last week.",
+    ],
+    note: "Giữ nguyên ý và đổi về mẫu It took.",
+    confidence: "high",
+  },
+  {
+    id: 118,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "My backpack is big and modern. Its color is light pink.\n-> I have ___.",
+    accepted: [
+      "a big modern light pink backpack",
+      "a big modern light pink backpack.",
+    ],
+    note: "Gộp mô tả thành cụm danh từ theo đề mẫu.",
+    confidence: "high",
+  },
+  {
+    id: 120,
+    section: "Sentence Rewrite",
+    type: "fill",
+    text: "I had to spend 60 minutes finishing my English test.\n-> It took ___.",
+    accepted: [
+      "me 60 minutes to finish my English test",
+      "me 60 minutes to finish my English test.",
+    ],
+    note: "Đổi cấu trúc tương tự câu 112.",
+    confidence: "high",
+  },
 ];
 
 const QUESTIONS = ALL_QUESTIONS.filter((question) => question.id >= 13);
 
+const SECTION_DEFINITIONS = [
+  {
+    key: "multiple-choice",
+    title: "Trắc nghiệm",
+    range: "Câu 13-48",
+    description:
+      "Câu 13-48: Pronunciation, Stress, Grammar & Vocabulary, Signs.",
+    startId: 13,
+    endId: 48,
+  },
+  {
+    key: "word-form",
+    title: "Word form",
+    range: "Câu 49-66",
+    description: "Câu 49-66: Word form.",
+    startId: 49,
+    endId: 66,
+  },
+  {
+    key: "reading",
+    title: "Bài đọc",
+    range: "Câu 67-102",
+    description:
+      "Câu 67-102: Reading passages, comprehension questions, and cloze passages.",
+    startId: 67,
+    endId: 102,
+  },
+  {
+    key: "sentence-rewrite",
+    title: "Viết lại câu",
+    range: "Câu 103-120",
+    description: "Câu 103-120: Viết lại câu, điền đúng phần đáp án yêu cầu.",
+    startId: 103,
+    endId: 120,
+  },
+];
+
 const state = {
   questions: [...QUESTIONS],
-  answers: new Array(QUESTIONS.length).fill(null),
+  currentSection: SECTION_DEFINITIONS[0].key,
+  answers: Object.fromEntries(QUESTIONS.map((question) => [question.id, null])),
   submitted: false,
 };
 
@@ -913,6 +1239,8 @@ const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("scoreText");
 const progressFill = document.getElementById("progressFill");
 const resultBanner = document.getElementById("resultBanner");
+const sectionTabs = document.getElementById("sectionTabs");
+const sectionHint = document.getElementById("sectionHint");
 const submitBtn = document.getElementById("submitBtn");
 const resetBtn = document.getElementById("resetBtn");
 const shuffleBtn = document.getElementById("shuffleBtn");
@@ -957,6 +1285,87 @@ const PASSAGE_C = {
   ],
 };
 
+const CLOZE_INTRO =
+  "V. Choose the word (A, B, C or D) that best fits the blank space in the following passage. (1.5 pts)";
+
+const CLOZE_PASSAGES = [
+  {
+    key: "passage-d",
+    title: "Passage A",
+    startId: 85,
+    endId: 90,
+    paragraphs: [
+      "Last summer, I was planning on taking an airplane for the first time, but there were many things I didn't know. For example, how many suitcases should I take (85) ________ what can I bring in my backpack? So, I asked my mom for help, and she told me that the more (86) ________ you bring, the more expensive the ticket is.",
+      "So, she suggested bringing only the things I needed. She also told me not to take (87) ________ items like large batteries or sharp objects (88) ________ I'll have to go through customs. My mom also said not to lose my boarding pass or passport because I'd need them to get (89) ________ the plane.",
+      "Finally, she told me I needed to find the baggage claim after the airplane landed to pick up my suitcases. I'm happy my mom was able to (90) ________ me know more about air traveling because it made the experience better.",
+    ],
+  },
+  {
+    key: "passage-e",
+    title: "Passage B",
+    startId: 91,
+    endId: 96,
+    paragraphs: [
+      "The largest festival in the world is Brazil's Carnival, (91) ________ is considered by many to be 'the greatest show on Earth.' Every year, more than 5 million people travel to Brazil (92) ________ they want to enjoy this exciting celebration. The festival is very (93) ________ with live music and dancing in the streets.",
+      "More than 70 samba schools (94) ________ every year for prizes. Dancers wear colorful costumes, and they form a long line to take part (95) ________ a parade. The festival (96) ________ before the Catholic season of Lent. It is also a time when people forget their daily worries and enjoy life.",
+    ],
+  },
+  {
+    key: "passage-f",
+    title: "Passage C",
+    startId: 97,
+    endId: 102,
+    paragraphs: [
+      "Last spring, I (97) ________ my cousin living in Ho Chi Minh City. She suggested the best time to visit the city was during the Tet festival. I had such a great time, (98) ________ I want to share my personal experience and what I learned about the Vietnam Lunar New Year. First, Tet is a celebration of the start of (99) ________.",
+      "The city is (100) ________ of flower vendors, and all the trees are in bloom. Second, it's about paying respect to your ancestors. I saw many people burning incense and families putting out food and fruit for (101) ________ loved ones who have passed away. Finally, Tet is about spending time with your family. I was surprised at how empty the city was.",
+      "My cousin told me it's a tradition for families to (102) ________ to their hometown to celebrate the New Year.",
+    ],
+  },
+];
+
+function getClozePassage(questionId) {
+  return (
+    CLOZE_PASSAGES.find(
+      (passage) => questionId >= passage.startId && questionId <= passage.endId,
+    ) || null
+  );
+}
+
+function isClozePassageStart(questionId) {
+  return CLOZE_PASSAGES.some((passage) => passage.startId === questionId);
+}
+
+function buildClozeIntroBlock() {
+  const wrapper = document.createElement("section");
+  wrapper.className = "reading-passage cloze-passage";
+
+  const title = document.createElement("h4");
+  title.className = "reading-title";
+  title.textContent = CLOZE_INTRO;
+  wrapper.append(title);
+
+  return wrapper;
+}
+
+function buildClozePassageBlock(passage) {
+  const wrapper = document.createElement("section");
+  wrapper.className = "reading-passage cloze-passage";
+
+  const title = document.createElement("h4");
+  title.className = "reading-title";
+  title.textContent = passage.title;
+  wrapper.append(title);
+
+  passage.paragraphs.forEach((paragraph) => {
+    const item = document.createElement("p");
+    item.className = "reading-item";
+    item.textContent = paragraph;
+    wrapper.append(item);
+  });
+
+  return wrapper;
+}
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -964,18 +1373,45 @@ function shuffle(array) {
   }
 }
 
-function answeredCount() {
-  return state.answers.reduce((count, answer, index) => {
-    const question = state.questions[index];
+function normalizeText(value) {
+  return String(value).trim().toLowerCase().replace(/\s+/g, "");
+}
+
+function getSectionDefinition(sectionKey) {
+  return (
+    SECTION_DEFINITIONS.find((section) => section.key === sectionKey) ||
+    SECTION_DEFINITIONS[0]
+  );
+}
+
+function getQuestionsForSection(sectionKey) {
+  const section = getSectionDefinition(sectionKey);
+  return state.questions.filter(
+    (question) =>
+      question.id >= section.startId && question.id <= section.endId,
+  );
+}
+
+function getCurrentQuestions() {
+  return getQuestionsForSection(state.currentSection);
+}
+
+function getAnswer(questionId) {
+  return state.answers[questionId];
+}
+
+function setAnswer(questionId, value) {
+  state.answers[questionId] = value;
+}
+
+function answeredCount(questions) {
+  return questions.reduce((count, question) => {
+    const answer = getAnswer(question.id);
     if (question.type === "fill") {
       return count + Number(typeof answer === "string" && answer.trim() !== "");
     }
     return count + Number(answer !== null);
   }, 0);
-}
-
-function normalizeText(value) {
-  return String(value).trim().toLowerCase().replace(/\s+/g, "");
 }
 
 function isAnswerCorrect(question, answer) {
@@ -988,16 +1424,21 @@ function isAnswerCorrect(question, answer) {
 }
 
 function score() {
-  return state.questions.reduce((sum, q, i) => {
-    return sum + Number(isAnswerCorrect(q, state.answers[i]));
+  return state.questions.reduce((sum, question) => {
+    return sum + Number(isAnswerCorrect(question, getAnswer(question.id)));
   }, 0);
 }
 
 function updateStatus() {
-  const done = answeredCount();
-  progressText.textContent = `${done} / ${state.questions.length}`;
+  const currentQuestions = getCurrentQuestions();
+  const done = answeredCount(currentQuestions);
+  const section = getSectionDefinition(state.currentSection);
+  progressText.textContent = `${done} / ${currentQuestions.length}`;
+  sectionHint.textContent = `${section.description} Bạn có thể chuyển phần bất cứ lúc nào, đáp án đã nhập sẽ được giữ lại.`;
   scoreText.textContent = `${state.submitted ? score() : 0}`;
-  progressFill.style.width = `${(done / state.questions.length) * 100}%`;
+  progressFill.style.width = currentQuestions.length
+    ? `${(done / currentQuestions.length) * 100}%`
+    : "0%";
 }
 
 function confidenceLabel(value) {
@@ -1125,10 +1566,46 @@ function buildPassageCBlock() {
   return wrapper;
 }
 
+function renderSectionTabs() {
+  sectionTabs.innerHTML = "";
+
+  SECTION_DEFINITIONS.forEach((section) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "section-tab";
+    button.setAttribute("role", "tab");
+    button.setAttribute(
+      "aria-selected",
+      String(section.key === state.currentSection),
+    );
+    button.setAttribute("aria-label", `${section.title} ${section.range}`);
+
+    if (section.key === state.currentSection) {
+      button.classList.add("active");
+    }
+
+    button.innerHTML = `
+      <span class="section-tab-title">${section.title}</span>
+      <span class="section-tab-meta">${section.range}</span>
+    `;
+
+    button.addEventListener("click", () => {
+      if (state.currentSection === section.key) return;
+      state.currentSection = section.key;
+      render();
+    });
+
+    sectionTabs.append(button);
+  });
+}
+
 function render() {
   quiz.innerHTML = "";
+  renderSectionTabs();
 
-  state.questions.forEach((q, i) => {
+  const visibleQuestions = getCurrentQuestions();
+
+  visibleQuestions.forEach((q, i) => {
     const node = template.content.cloneNode(true);
     const card = node.querySelector(".card");
     const index = node.querySelector(".q-index");
@@ -1156,6 +1633,17 @@ function render() {
       media.append(buildPassageCBlock());
     }
 
+    if (q.id === 85) {
+      card.classList.add("reading-card");
+      media.append(buildClozeIntroBlock());
+    }
+
+    const clozePassage = getClozePassage(q.id);
+    if (clozePassage && isClozePassageStart(q.id)) {
+      card.classList.add("reading-card");
+      media.append(buildClozePassageBlock(clozePassage));
+    }
+
     if (q.image) {
       const image = document.createElement("img");
       image.src = q.image;
@@ -1171,20 +1659,20 @@ function render() {
 
       const fillLabel = document.createElement("label");
       fillLabel.className = "fill-label";
-      fillLabel.setAttribute("for", `q${i}fill`);
+      fillLabel.setAttribute("for", `q${q.id}fill`);
       fillLabel.textContent = "Điền từ vào chỗ trống:";
 
       const fillInput = document.createElement("input");
       fillInput.type = "text";
-      fillInput.id = `q${i}fill`;
+      fillInput.id = `q${q.id}fill`;
       fillInput.className = "fill-input";
       fillInput.value =
-        typeof state.answers[i] === "string" ? state.answers[i] : "";
+        typeof getAnswer(q.id) === "string" ? getAnswer(q.id) : "";
       fillInput.placeholder = "Nhập đáp án...";
       fillInput.disabled = state.submitted;
 
       fillInput.addEventListener("input", (event) => {
-        state.answers[i] = event.target.value;
+        setAnswer(q.id, event.target.value);
         updateStatus();
       });
 
@@ -1192,7 +1680,7 @@ function render() {
       opts.append(fillWrap);
     } else {
       q.options.forEach((opt, j) => {
-        const id = `q${i}o${j}`;
+        const id = `q${q.id}o${j}`;
         const label = document.createElement("label");
         label.className = "opt";
         label.setAttribute("for", id);
@@ -1200,12 +1688,12 @@ function render() {
         const input = document.createElement("input");
         input.type = "radio";
         input.id = id;
-        input.name = `question-${i}`;
-        input.checked = state.answers[i] === j;
+        input.name = `question-${q.id}`;
+        input.checked = getAnswer(q.id) === j;
         input.disabled = state.submitted;
 
         input.addEventListener("change", () => {
-          state.answers[i] = j;
+          setAnswer(q.id, j);
           render();
         });
 
@@ -1217,9 +1705,9 @@ function render() {
           span.textContent = `${optionPrefix}${opt}`;
         }
 
-        if (state.answers[i] === j) label.classList.add("selected");
+        if (getAnswer(q.id) === j) label.classList.add("selected");
         if (state.submitted && j === q.correct) label.classList.add("correct");
-        if (state.submitted && state.answers[i] === j && j !== q.correct)
+        if (state.submitted && getAnswer(q.id) === j && j !== q.correct)
           label.classList.add("wrong");
 
         label.append(input, span);
@@ -1228,11 +1716,12 @@ function render() {
     }
 
     if (state.submitted) {
-      const isCorrect = isAnswerCorrect(q, state.answers[i]);
+      const answer = getAnswer(q.id);
+      const isCorrect = isAnswerCorrect(q, answer);
       if (q.type === "fill") {
         const userText =
-          typeof state.answers[i] === "string" && state.answers[i].trim() !== ""
-            ? state.answers[i].trim()
+          typeof answer === "string" && answer.trim() !== ""
+            ? answer.trim()
             : "(chưa điền)";
         const rightText = q.accepted[0];
         analysis.textContent = isCorrect
@@ -1272,7 +1761,9 @@ submitBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  state.answers = new Array(state.questions.length).fill(null);
+  state.answers = Object.fromEntries(
+    state.questions.map((question) => [question.id, null]),
+  );
   state.submitted = false;
   resultBanner.classList.remove("show");
   resultBanner.textContent = "";
@@ -1282,7 +1773,9 @@ resetBtn.addEventListener("click", () => {
 shuffleBtn.addEventListener("click", () => {
   state.questions = [...QUESTIONS];
   shuffle(state.questions);
-  state.answers = new Array(state.questions.length).fill(null);
+  state.answers = Object.fromEntries(
+    state.questions.map((question) => [question.id, null]),
+  );
   state.submitted = false;
   resultBanner.classList.remove("show");
   resultBanner.textContent = "";

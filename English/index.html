@@ -22,20 +22,25 @@
           <p class="eyebrow">ÔN TẬP CUỐI HỌC KÌ II - LỚP 7</p>
           <h1>English Practice Website</h1>
           <p class="lead">
-            Luyện 72 câu (từ câu 13-84) gồm trắc nghiệm và điền khuyết, nộp bài
-            để xem điểm và phân tích đúng/sai chi tiết.
+            Luyện 102 câu (từ câu 13-120) gồm trắc nghiệm, điền khuyết và viết
+            lại câu, nộp bài để xem điểm và phân tích đúng/sai chi tiết.
           </p>
         </div>
         <button id="shuffleBtn" class="btn ghost" type="button">Đảo đề</button>
       </header>
 
+      <section class="section-switcher" aria-label="Chuyển phần làm bài">
+        <div id="sectionTabs" class="section-tabs" role="tablist"></div>
+        <p id="sectionHint" class="section-hint"></p>
+      </section>
+
       <section class="metrics">
         <article class="metric">
-          <p>Đã trả lời</p>
-          <h2 id="progressText">0 / 72</h2>
+          <p>Đã làm phần hiện tại</p>
+          <h2 id="progressText">0 / 102</h2>
         </article>
         <article class="metric">
-          <p>Điểm</p>
+          <p>Điểm toàn bài</p>
           <h2 id="scoreText">0</h2>
         </article>
       </section>
